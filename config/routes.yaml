@@ -3,3 +3,26 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+
+app_api_get:
+    path: '/getValue'
+    methods: GET
+    controller: App\Controller\ApiController::getValue
+
+
+app_api_post:
+    path: '/postValue'
+    methods: POST
+    controller: App\Controller\ApiController::createValue
+
+
+app_api_update:
+    path: '/updateValue/{id}'
+    methods: PUT
+    controller: App\Controller\ApiController::updateValue
+
+app_api_delete:
+    path: '/deleteValue/{id}'
+    methods: DELETE
+    controller: App\Controller\ApiController::deleteValue
