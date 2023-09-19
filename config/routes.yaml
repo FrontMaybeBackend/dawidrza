@@ -26,3 +26,9 @@ app_api_delete:
     path: '/deleteValue/{id}'
     methods: DELETE
     controller: App\Controller\ApiController::deleteValue
+
+
+app_exchange:
+    path: '/exchange/values'
+    methods: POST
+    controller: App\Controller\ExchangeController::exchangeValue
